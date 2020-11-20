@@ -2,4 +2,18 @@
 
 @tailwind components;
 
+.breite {
+  @apply w-11/12 md:w-10/12 mx-auto;
+}
+
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+body {
+  background: #f8fafc;
+}
+
+.logo {
+  font-family: "Patrick Hand", cursive;
+}
