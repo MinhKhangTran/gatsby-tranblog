@@ -6,8 +6,10 @@ import Articles from "../components/Articles"
 export default function Home() {
   return (
     <Layout>
-      <AboutMe />
-      <Articles />
+      <div className="w-11/12 mx-auto flex flex-wrap md:flex-no-wrap">
+        <AboutMe />
+        <Articles />
+      </div>
     </Layout>
   )
 }
