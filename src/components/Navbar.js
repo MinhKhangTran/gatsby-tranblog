@@ -3,13 +3,13 @@ import { socials, navbar } from "../constants/data"
 import { FaBars } from "react-icons/fa"
 import { Link } from "gatsby"
 
-const Navbar = () => {
+const Navbar = ({ toggleNavbar }) => {
   return (
     <nav className="">
       <div className="breite flex items-center justify-between text-xl text-gray-800  tracking-wider p-2">
         <div className="flex items-center justify-between w-full md:w-auto">
           <h1 className="logo text-4xl">TranBlog</h1>
-          <button className="md:hidden">
+          <button className="md:hidden" onClick={toggleNavbar}>
             <FaBars />
           </button>
         </div>

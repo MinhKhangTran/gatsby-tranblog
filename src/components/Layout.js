@@ -6,12 +6,16 @@ import Footer from "./Footer"
 import Categories from "./Categories"
 
 const Layout = ({ children }) => {
+  const [toggleNav, setToggleNav] = React.useState(false)
+  const toggleNavbar = () => {
+    setToggleNav(!toggleNav)
+  }
   return (
     <>
-      <Navbar />
+      <Navbar toggleNavbar={toggleNavbar} />
       <Categories />
       {children}
-      <Sidebar />
+      <Sidebar toggleNav={toggleNav} toggleNavbar={toggleNavbar} />
       <Footer />
     </>
   )

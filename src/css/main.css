@@ -6,6 +6,18 @@
   @apply w-11/12 md:w-10/12 mx-auto;
 }
 
+.sidebar {
+  @apply bg-lime-100 fixed top-0 left-0 right-0 bottom-0 transition transition-all duration-700 ease-in-out;
+}
+
+.sidebar-close {
+  @apply transform -translate-x-full;
+}
+
+.sidebar-open {
+  @apply transform translate-x-0;
+}
+
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
