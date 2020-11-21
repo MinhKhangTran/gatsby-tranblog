@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import AboutMe from "../components/AboutMe"
 import Articles from "../components/Articles"
+import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 export const query = graphql`
   {
@@ -34,6 +36,7 @@ const Posts = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Posts" />
       <div className="w-11/12 mx-auto flex md:flex-no-wrap flex-wrap justify-between">
         <AboutMe />
         <Articles posts={posts} />

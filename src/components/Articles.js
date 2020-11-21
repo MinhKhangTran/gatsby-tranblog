@@ -4,7 +4,7 @@ import Image from "gatsby-image"
 
 const Articles = ({ posts }) => {
   return (
-    <div className="md:w-8/12 w-full mb-8">
+    <div className="md:w-8/12 w-full mb-8 mt-8 md:mt-0">
       <h1 className="text-xl text-gray-800  tracking-wider px-4">
         Latest Posts
       </h1>
@@ -47,7 +47,7 @@ const Articles = ({ posts }) => {
                 <div className="self-start">
                   <Link
                     to={`/posts/${slug}`}
-                    className="mt-2 text-gray-500 inline-block tracking-wider hover:text-gray-700"
+                    className="my-2 text-gray-500 inline-block tracking-wider hover:text-gray-700"
                   >
                     Read more
                   </Link>

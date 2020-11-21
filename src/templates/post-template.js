@@ -4,6 +4,7 @@ import AboutMe from "../components/AboutMe"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Image from "gatsby-image"
+import SEO from "../components/SEO"
 
 const PostTemplate = ({ data }) => {
   const {
@@ -14,6 +15,7 @@ const PostTemplate = ({ data }) => {
   } = data
   return (
     <Layout>
+      <SEO title={title} image={image.childImageSharp.fluid.src} />
       <div className="w-11/12 mx-auto flex md:flex-nowrap flex-wrap justify-between">
         <AboutMe />
         <div className="md:w-8/12 w-full mb-8 md:mt-0 mt-8">

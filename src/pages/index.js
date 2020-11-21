@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/Layout"
 import AboutMe from "../components/AboutMe"
 import Articles from "../components/Articles"
+import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 const Home = ({ data }) => {
   const {
@@ -10,6 +12,7 @@ const Home = ({ data }) => {
   console.log(posts)
   return (
     <Layout>
+      <SEO title="Home" />
       <div className="w-11/12 mx-auto flex md:flex-nowrap flex-wrap justify-between">
         <AboutMe />
         <Articles posts={posts} />
