@@ -10,7 +10,7 @@ const Home = ({ data }) => {
   console.log(posts)
   return (
     <Layout>
-      <div className="w-11/12 mx-auto flex md:flex-no-wrap flex-wrap justify-between">
+      <div className="w-11/12 mx-auto flex md:flex-nowrap flex-wrap justify-between">
         <AboutMe />
         <Articles posts={posts} />
       </div>

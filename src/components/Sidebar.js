@@ -17,7 +17,7 @@ const Sidebar = ({ toggleNavbar, toggleNav }) => {
         })}
       </nav>
       <button
-        className="absolute top-0 right-0 p-8 text-lime-600 font-bold text-6xl animate-pulse"
+        className="absolute top-0 right-0 p-8 text-lime-600 dark:text-lime-100 font-bold text-6xl animate-pulse"
         onClick={toggleNavbar}
       >
         <FaTimes />

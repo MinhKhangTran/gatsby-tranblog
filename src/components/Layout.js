@@ -1,5 +1,5 @@
 import React from "react"
-import "../css/main.css"
+// import "../css/main.css"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
@@ -9,6 +9,7 @@ const Layout = ({ children }) => {
   const [toggleNav, setToggleNav] = React.useState(false)
   const toggleNavbar = () => {
     setToggleNav(!toggleNav)
+    // document.documentElement.className = "dark"
   }
   return (
     <>

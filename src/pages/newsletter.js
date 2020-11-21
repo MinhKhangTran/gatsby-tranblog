@@ -8,7 +8,7 @@ const Newsletter = () => {
         className="flex flex-col justify-center items-center"
         style={{ minHeight: "calc(100vh - 199px)" }}
       >
-        <h1 className="text-lime-500 md:text-2xl text-lg tracking-wide">
+        <h1 className="text-lime-500 md:text-2xl text-lg tracking-wide text-center">
           Feel Free to Subscribe. I post every few weeks some new stuffs
         </h1>
         <form class="font-sans text-sm rounded  w-full max-w-md mx-auto my-8 px-8 pt-6 pb-8">

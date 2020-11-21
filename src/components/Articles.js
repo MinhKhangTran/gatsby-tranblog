@@ -34,10 +34,10 @@ const Articles = ({ posts }) => {
               </div>
               <div className="flex flex-col">
                 <header className="flex justify-between">
-                  <h1 className="text-lime-600 font-bold text-xl mb-2">
+                  <h1 className="text-lime-600 dark:text-lime-100 font-bold text-xl mb-2">
                     {title}
                   </h1>
-                  <h1 className="text-lime-400">
+                  <h1 className="text-lime-600">
                     Reading Time:
                     <span> {readTime} min</span>
                   </h1>
