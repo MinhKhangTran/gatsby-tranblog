@@ -22,7 +22,7 @@ const AboutMe = () => {
     },
   } = data
   return (
-    <article className="md:w-1/4 w-full space-x-4 bg-white rounded-lg shadow-xl pt-6 px-6 pb-4 self-start">
+    <article className="md:w-3/12 w-full space-x-4 bg-white rounded-lg shadow-xl pt-6 px-6 pb-4 self-start">
       <div className="space-y-1 flex flex-col items-center">
         <div className="bg-gradient-to-tr from-lime-200 to-lime-500 p-0.5 inline-block rounded-full">
           <div className="bg-gray-50 block rounded-full p-1">

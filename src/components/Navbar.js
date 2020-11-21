@@ -17,7 +17,7 @@ const Navbar = ({ toggleNavbar }) => {
           {navbar.map(link => {
             const { id, text, url } = link
             return (
-              <li className="capitalize" key={id}>
+              <li className="capitalize hover:text-gray-400" key={id}>
                 <Link to={url}>{text}</Link>
               </li>
             )
@@ -27,7 +27,7 @@ const Navbar = ({ toggleNavbar }) => {
           {socials.map(link => {
             const { id, url, icon } = link
             return (
-              <li className="" key={id}>
+              <li className=" hover:text-gray-400" key={id}>
                 <a href={url} target="__blank">
                   {icon}
                 </a>
@@ -36,7 +36,7 @@ const Navbar = ({ toggleNavbar }) => {
           })}
         </ul>
       </div>
-      <div className="bg-gradient-to-r from-lime-200 to-lime-500 h-0.5 w-screen"></div>
+      <div className="bg-gradient-to-r from-lime-200 to-lime-500 h-0.5 w-full"></div>
     </nav>
   )
 }
